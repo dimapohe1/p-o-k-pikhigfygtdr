@@ -1,1 +1,0 @@
-# p-o-k-pikhigfygtdr
