@@ -1,17 +1,16 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Видео по теме проекта</title>
 
-
+<!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
 
 <style>
-
-
 
 body {
     margin: 0;
@@ -22,7 +21,6 @@ body {
 
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 20px;
 }
 
 .logo {
@@ -32,8 +30,7 @@ h1, h2, h3 {
     color: white;
 }
 
-
-
+/* Шапка */
 header {
     background: #1e1e2f;
     padding: 15px 40px;
@@ -64,8 +61,7 @@ nav a:hover {
     color: #ff9800;
 }
 
-
-
+/* Основной раздел */
 .video-section {
     padding: 60px 20px;
     text-align: center;
@@ -78,8 +74,7 @@ nav a:hover {
     line-height: 1.6;
 }
 
-
-
+/* Сетка видео */
 .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -100,8 +95,7 @@ iframe:hover {
     transform: scale(1.03);
 }
 
-
-
+/* Подвал */
 footer {
     background: #1e1e2f;
     color: white;
@@ -118,21 +112,9 @@ footer {
     color: #ff9800;
     margin: 0 12px;
     text-decoration: none;
-    transition: 0.3s;
 }
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-
 
 @media (max-width: 768px) {
-    nav ul {
-        gap: 15px;
-        font-size: 14px;
-    }
-
     iframe {
         height: 200px;
     }
@@ -141,8 +123,6 @@ footer {
 </style>
 </head>
 <body>
-
-
 
 <header>
     <nav>
@@ -156,47 +136,39 @@ footer {
     </nav>
 </header>
 
-
-
 <main>
     <section class="video-section">
         <h1>Видео по теме проекта</h1>
         <p class="description">
-            Здесь собрана подборка интересных видеороликов, которые раскрывают
-            тему проекта, помогают лучше разобраться в материале и делают
-            изучение более наглядным.
+            Подборка качественных и интересных видеороликов по теме проекта.
         </p>
 
-<div class="video-grid">
+        <div class="video-grid">
 
-    <iframe 
-        src="https://www.youtube.com/embed/1w8Z0UOXVaY"
-        title="Как устроена Вселенная"
-        frameborder="0" 
-        allowfullscreen>
-    </iframe>
+            <iframe 
+                src="https://www.youtube.com/embed/1w8Z0UOXVaY"
+                title="Видео 1"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
 
-  
-    <iframe 
-        src="https://www.youtube.com/embed/2ePf9rue1Ao"
-        title="Что такое искусственный интеллект"
-        frameborder="0" 
-        allowfullscreen>
-    </iframe>
+            <iframe 
+                src="https://www.youtube.com/embed/2ePf9rue1Ao"
+                title="Видео 2"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
 
+            <iframe 
+                src="https://www.youtube.com/embed/7H3KsGvZfUo"
+                title="Видео 3"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
 
-    <iframe 
-        src="https://www.youtube.com/embed/7H3KsGvZfUo"
-        title="Будущее технологий"
-        frameborder="0" 
-        allowfullscreen>
-    </iframe>
-
-</div>
-
+        </div>
     </section>
 </main>
-
 
 <footer>
     <p>© 2026 MyProject | Все права защищены</p>
